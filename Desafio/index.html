@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador y Desencriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Encriptador y Desencriptador de Texto</h1>
+        <textarea id="textoEntrada" placeholder="Introduce el texto aquí..."></textarea>
+        <div class="contenedor-botones">
+            <button id="botonEncriptar" onclick="encriptarTexto()">Encriptar</button>
+            <button id="botonDesencriptar" onclick="desencriptarTexto()">Desencriptar</button>
+        </div>
+        <div class="contenedor-botones">
+            <button id="botonBorrar" onclick="borrarTexto()">Borrar Texto</button>
+        </div>
+        <h2>Resultado</h2>
+        <textarea id="textoSalida" readonly></textarea>
+        <button id="botonCopiar" onclick="copiarTexto()">Copiar Texto</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
